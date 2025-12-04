@@ -40,7 +40,7 @@ body{
 }
 .app-header p{
   margin:0;
-  font-size:16px;
+  font-size:20px;
   color:#f97316;
 }
 
@@ -219,7 +219,7 @@ input[type=range]::-moz-range-thumb{
   border-radius:18px;
   background:radial-gradient(circle at top,#ffffff,#e5e7eb);
   overflow:hidden;
-  min-height:320px;
+  min-height:300px;
 }
 
 #bikeImage{
@@ -233,8 +233,8 @@ input[type=range]::-moz-range-thumb{
 #ageLine,
 #avgLine{
   position:absolute;
-  top:24px;
-  bottom:88px;           /* stop above labels/bars */
+  top:29px;
+  bottom:116px;           /* stop above labels/bars */
   width:3px;
   transform:translateX(-50%);
 }
@@ -269,7 +269,7 @@ input[type=range]::-moz-range-thumb{
 /* Best Riding Years band */
 .prime-band{
   position:absolute;
-  bottom:538px;
+  bottom:90px;
   left:50%;
   transform:translateX(-50%);
   height:26px;
@@ -292,13 +292,13 @@ input[type=range]::-moz-range-thumb{
 .prime-tooltip{
   position:absolute;
   padding:4px 8px;
-  font-size:13px;
+  font-size:12px;
   background:#020617;
   color:#f9fafb;
   border-radius:999px;
   white-space:nowrap;
-  top:500px;
-  left:50%;
+  top:472px;
+  left:65%;
   transform:translateX(-50%);
   opacity:0;
   pointer-events:none;
@@ -309,7 +309,7 @@ input[type=range]::-moz-range-thumb{
 /* Journey bar pill */
 .journey-bar-wrapper{
   position:absolute;
-  bottom:20px;
+  bottom:21px;
   left:51%;
   transform:translateX(-50%);
   width:100%;
