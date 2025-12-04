@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>One Bike 2</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>One Bike, One Life</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="shell">
+
+  <!-- Global header -->
+  <header class="app-header">
+    <h1>One Bike for One Life</h1>
+    <p>See where you are on your journey.</p>
+  </header>
+
+  <main class="layout">
+    <!-- LEFT: Controls -->
+    <section class="panel panel-controls">
+      <div class="card">
+        <h2 class="card-title">Your details</h2>
+
+        <!-- Sex -->
+        <label class="field-label" for="sex">Sex</label>
+        <select id="sex" class="field-input">
+          <option value="male">Male (Average Lifespan 75.8 yrs)</option>
+          <option value="female">Female (Average Lifespan 81.1 yrs)</option>
+        </select>
+
+        <!-- Life expectancy -->
+        <div class="field-group">
+          <div class="field-top-row">
+            <label class="field-label">Life expectancy</label>
+            <span class="age-display">
+              <span id="lifeDisplay">76</span> yrs
+            </span>
+          </div>
+
+          <div class="life-row">
+            <label class="toggle">
+              <input type="checkbox" id="lifeOverrideToggle" />
+              <span class="toggle-slider"></span>
+              <span class="toggle-text">Custom</span>
+            </label>
+            <span class="life-mode-label" id="lifeModeLabel">Using default for sex</span>
+          </div>
+
+          <input
+            type="range"
+            id="lifeOverrideRange"
+            min="30"
+            max="110"
+            value="76"
+            class="life-slider"
+            disabled
+          />
+
+          <input
+            type="number"
+            id="lifeInput"
+            min="30"
+            max="110"
+            value="76"
+            class="field-input age-input"
+            disabled
+          />
+        </div>
+
+        <!-- Age -->
+        <div class="field-group">
+          <div class="field-top-row">
+            <label class="field-label" for="ageRange">Current age</label>
+            <span class="age-display">
+              <span id="ageDisplay">40</span> yrs
+            </span>
+          </div>
+
+          <input type="range" id="ageRange" min="0" max="76" value="40" />
+          <input
+            type="number"
+            id="ageInput"
+            min="0"
+            max="76"
+            value="40"
+            class="field-input age-input"
+          />
+        </div>
+
+        <!-- Summary -->
+        <div class="summary">
+          <div class="summary-row">
+            <span>Life expectancy</span>
+            <strong><span id="lifeExpValue">76</span> yrs</strong>
+          </div>
+          <div class="summary-row">
+            <span>Years lived</span>
+            <strong id="yearsLivedValue">40</strong>
+          </div>
+          <div class="summary-row">
+            <span>Years remaining</span>
+            <strong id="yearsRemainingValue">36</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RIGHT: Visualization -->
+    <section class="panel panel-visual">
+      <div class="visual-card">
+      <div class="bike-stage" id="bikeStage">
+          <!-- Lines -->
+          <div id="avgLine"></div>
+          <div id="ageLine"></div>
+
+          <!-- Bike photo -->
+          <!-- Replace src with your URL or file name if needed -->
+          <img id="bikeImage"
+     src="https://raw.githubusercontent.com/Donwonty/Bike-Access/main/orange-bike.png"
+     alt="Bike" />
+
+          <!-- Markers -->
+          <div class="age-marker-label" id="ageMarkerLabel">You are here</div>
+          <div class="age-marker-label avg" id="avgMarkerLabel">End of your ride</div>
+
+          <!-- Best Riding Years band -->
+          <div class="prime-band" id="primeBand">Best Riding Years</div>
+          <div class="prime-tooltip" id="primeTooltip"></div>
+
+          <!-- Journey bar (pill style) -->
+          <div class="journey-bar-wrapper" id="journeyBarWrapper">
+            <div class="journey-bar-fill" id="journeyBarInner"></div>
+            <div class="journey-bar-label">
+              Journey Completed: <span id="journeyPercentValue">53</span>%
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
